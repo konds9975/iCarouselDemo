@@ -14,6 +14,9 @@
 		FFD7C0DE2062A9640011C752 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFD7C0DC2062A9640011C752 /* LaunchScreen.storyboard */; };
 		FFD7C0E92062A9640011C752 /* iCarouselDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD7C0E82062A9640011C752 /* iCarouselDemoTests.swift */; };
 		FFD7C0F42062A9640011C752 /* iCarouselDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD7C0F32062A9640011C752 /* iCarouselDemoUITests.swift */; };
+		FFD7C10A2062AC100011C752 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD7C1092062AC100011C752 /* iCarousel.m */; };
+		FFD7C10C2062B0A00011C752 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFD7C10B2062B0A00011C752 /* CustomView.xib */; };
+		FFD7C10E2062B0BD0011C752 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD7C10D2062B0BD0011C752 /* CustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,11 @@
 		FFD7C0EF2062A9640011C752 /* iCarouselDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCarouselDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD7C0F32062A9640011C752 /* iCarouselDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCarouselDemoUITests.swift; sourceTree = "<group>"; };
 		FFD7C0F52062A9640011C752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFD7C1072062AC100011C752 /* iCarouselDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iCarouselDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		FFD7C1082062AC100011C752 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		FFD7C1092062AC100011C752 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		FFD7C10B2062B0A00011C752 /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		FFD7C10D2062B0BD0011C752 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +105,17 @@
 		FFD7C0D22062A9640011C752 /* iCarouselDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FFD7C1082062AC100011C752 /* iCarousel.h */,
+				FFD7C1092062AC100011C752 /* iCarousel.m */,
+				FFD7C1072062AC100011C752 /* iCarouselDemo-Bridging-Header.h */,
 				FFD7C0D32062A9640011C752 /* AppDelegate.swift */,
 				FFD7C0D52062A9640011C752 /* ViewController.swift */,
 				FFD7C0D72062A9640011C752 /* Main.storyboard */,
 				FFD7C0DA2062A9640011C752 /* Assets.xcassets */,
 				FFD7C0DC2062A9640011C752 /* LaunchScreen.storyboard */,
 				FFD7C0DF2062A9640011C752 /* Info.plist */,
+				FFD7C10B2062B0A00011C752 /* CustomView.xib */,
+				FFD7C10D2062B0BD0011C752 /* CustomView.swift */,
 			);
 			path = iCarouselDemo;
 			sourceTree = "<group>";
@@ -233,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFD7C0DE2062A9640011C752 /* LaunchScreen.storyboard in Resources */,
+				FFD7C10C2062B0A00011C752 /* CustomView.xib in Resources */,
 				FFD7C0DB2062A9640011C752 /* Assets.xcassets in Resources */,
 				FFD7C0D92062A9640011C752 /* Main.storyboard in Resources */,
 			);
@@ -259,6 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFD7C10A2062AC100011C752 /* iCarousel.m in Sources */,
+				FFD7C10E2062B0BD0011C752 /* CustomView.swift in Sources */,
 				FFD7C0D62062A9640011C752 /* ViewController.swift in Sources */,
 				FFD7C0D42062A9640011C752 /* AppDelegate.swift in Sources */,
 			);
@@ -432,7 +448,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iCarouselDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sachin/Desktop/iCarouselDemo/iCarouselDemo/iCarouselDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -447,7 +464,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iCarouselDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sachin/Desktop/iCarouselDemo/iCarouselDemo/iCarouselDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
